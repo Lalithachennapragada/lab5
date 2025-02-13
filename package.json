@@ -1,29 +1,23 @@
 {
   "name": "lab5",
-  "version": "1.0.20",
+  "version": "1.0.19",
   "description": "A tabbed pane component using React.js",
   "author": "adafycheng",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://git@github.com:Lalithachennapragada/lab5/"
-  },
+  "repository": "https://git@github.com:Lalithachennapragada/lab5/",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "lint": "eslint 'src/**/*.js?(x)'",
-    "prepare": "npx run-s build",
-    "test": "npx run-s test:unit test:lint test:build",
-    "test:build": "npx run-s build",
+    "prepare": "run-s build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
     "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
@@ -59,6 +53,7 @@
   ],
   "dependencies": {
     "jquery": "^3.6.2",
-    "sass": "^1.63.2"
+    "sass": "^1.63.2",
+    "yarn": "^1.22.19"
   }
 }
