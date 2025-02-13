@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adafycheng/reactjs-tabbedpane-component.git"
+    "url": "https://git@github.com:Lalithachennapragada/lab5.git/"
   },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
